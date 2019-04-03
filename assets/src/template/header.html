@@ -1,14 +1,14 @@
 <header>
     <section class="container mx-auto">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56">
                     <g fill="none" fill-rule="evenodd">
-                        <text fill="#FFF" font-family="Lato-Black, Lato" font-size="18" font-weight="700" letter-spacing="1">
-                            <tspan x="52" y="18">JUST SOME</tspan> <tspan x="52" y="40">AWESOME LOGO</tspan>
+                        <text fill="#FFF" font-family="Lato-Black, Lato, LatoLatinWebBlack" font-size="23" font-weight="700" letter-spacing="1">
+                            <tspan x="52" y="18">JUST SOME</tspan> <tspan x="52" y="45">AWESOME LOGO</tspan>
                         </text>
                         <path stroke="#FFCC01" stroke-width="2" d="M13 11h-3v34h3V11zm5 0v34h6V11h-6zM5 11H3v34h2V11zm24 0v34h8V11h-8z"/>
                     </g>
@@ -17,21 +17,47 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Mask Copy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link text-white" href="#">CONTACT US</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-bs-y btn-outline-light my-2 my-sm-0 bg-warning" type="submit">Sign in</button>
                 </form>
             </div>
         </nav>
+    </section>
+    <section class="container mx-auto row d-flex justify-content-around">
+        <div class="col-6  text-white header--text d-flex align-items-center">
+            <p>
+                <span>Join Affiliates</span>
+                and start earning money online by promoting products and services to your audience.
+            </p>
+        </div>
+        <form class="col-5 bg-light d-flex flex-column justify-content-center rounded">
+            <h3 class="mx-auto">Start earning right now</h3>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-sm border-warning" id="login" placeholder="Login...">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control form-control-sm border-warning" id="email" aria-describedby="emailHelp" placeholder="Email...">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-sm border-warning" id="phone" placeholder="Skype/phone...">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-sm border-warning" id="name" placeholder="Individual or Business name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-sm border-warning" id="site" placeholder="Websites">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control form-control-sm border-warning" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </section>
 </header>
