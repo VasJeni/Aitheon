@@ -20,6 +20,9 @@ header {
   & form {
     padding: 20px 0;
     margin: 20px 0;
+    & a {
+      text-transform: uppercase;
+    }
     & h3 {
       vertical-align: center;
       font-size: 18px;
@@ -44,30 +47,88 @@ header {
     padding-bottom: 40px;
   }
   &--item {
-    &__svg-wrapper {
-      padding: 40px;
-      position: relative;
+    & figcaption {
+      margin: 30px auto;
+      width: 60%;
+      font-size: 20px;
+    }
+  }
+  &--circle {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+      background: #f4f8fc;
+      border-radius: 50%;
     }
     & svg {
-      height: 82px;
-      width: auto;
-      position: relative;
-      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: auto;
+      width: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
+.contactus {
+  &--wrapper {
+    background: url("../img/bgcontact.jpg") center bottom no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+  }
+  & form {
+    margin-top: 30px;
+  }
+  & input,
+  & textarea{
+    background-color: rgba(30, 225, 255, 0);
+    color: white;
+  }
+  & input:active,
+  & textarea:active,
+  & textarea:focus,
+  & input:focus {
+    background: rgba(255, 255, 255, 0.62);
+  }
+  & input::placeholder,
+  & textarea::placeholder{
+    color: #f4f8fc;
+  }
+  & button {
+    box-shadow: 0 0 10px #0069d9;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  & h4 {
+    text-transform: uppercase;
+  }
+}
 
-.advantages--item__svg-wrapper:before {
-  position: absolute ;
-  height: 100%;
-  width: 100%;
-  display: block ;
-  content: '' ;
-  z-index: 1 ;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #f4f8fc;
-  border-radius: 50%;
+.footer {
+  &--wrapper {
+    background: #ffffff;
+    color: #0d253e;
+  }
+  & a {
+    color: #0d253e;
+    text-transform: uppercase;
+  }
+  & ul {
+    text-align: right;
+    text-orientation: upright;
+  }
+  & li {
+    text-align: right;
+    text-orientation: upright;
+  }
+}
+body {
+  font-family: LatoWeb, sans-serif;
 }

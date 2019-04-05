@@ -41,9 +41,9 @@
 @import "../../../node_modules/bootstrap/scss/_print";
 
 //подключение шрифтов Lato
-@import "../fonts/Lato2OFLWeb/Lato/latofonts.css";
-//@import "../fonts/Lato2OFLWeb/Lato/latostyle.css";
-@import "../fonts/Lato2OFLWeb/LatoLatin/latolatinfonts.css";
+@import "latofonts";
+
+//@import "../fonts/Lato2OFLWeb/LatoLatin/latolatinfonts.css";
 //@import "../fonts/Lato2OFLWeb/LatoLatin/latostyle.css";
 
 
